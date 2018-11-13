@@ -107,8 +107,6 @@ a:active {
 	text-shadow: 1px 1px #9C8C8C;
 }
 
-
-
 .button:hover {
 	color: #FFFFFF;
 	transition: 0.5s ease;
@@ -119,7 +117,7 @@ a:active {
 	border-radius: 5px;
 	padding: 0 10px;
 	color: #6D5947;
-	text-shadow: none;
+	text-shadow: 1px #FFFFFF;
 }
 
 /* TOOLS */
@@ -208,7 +206,7 @@ a:active {
 	margin: 0;
 	padding: 30px 0;
 	overflow: hidden;
-	background-color: #f1f1f1;
+	background-color: #D8D8D8;
 }
 
 .footerTop	{
@@ -361,7 +359,7 @@ a:active {
 	}
 	
 	.heroText	{
-		padding: 50px;
+		padding: 25px;
 		font-size: 24px;
 	}
 
@@ -451,7 +449,6 @@ a:active {
 		width: 100%;
 		margin: 0 auto;
 		padding: 25px 0;
-		background-color: lightgray;
 	}
 
 	.footerTop	{
