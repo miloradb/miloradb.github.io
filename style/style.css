@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:900;
+	margin:1em 0 0.5em;
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+
+a:link,
+a:visited {
+	text-decoration:none;
+	color: ;
+}
+a:hover {
+
+}
+a:active {
+	color:
+}
+
+/* WRAPPER */
+
+#wrapper	{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#hero	{
+	background-image: url(../images/hero10.jpeg);
+	height: 600px;
+	background-position: center top;
+	background-size: cover;
+}
+
+#header	{
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.3);
+	height: 60px;
+}
+
+.logo	{
+	float: left;
+}
+
+.logo img	{
+	height: 50px;
+	padding-top: 7px;
+}
+
+.nav	{
+	float: right;
+}
+
+.nav ul	{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav ul li	{
+	float: left;
+	padding: 20px 0 20px 30px;
+}
+
+.nav ul li a	{
+	font-size: 17px;
+	display: block;
+}
+
+.nav ul li a:link,
+.nav ul li a:visited {
+	text-decoration:none;
+	color: #FFFFFF;
+}
+
+.nav ul li a:hover {
+	color: #c6beb3;
+}
+
+
+.heroText	{
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	padding: 70px;
+	font-size: 32px;
+}
+
+.heroText	p	{
+	text-shadow: 1px 1px #9C8C8C;
+}
+
+.button	{
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 0 10px;
+	color: aqua;
+	text-shadow: none;
+}
+
+#tools	{
+	margin: 0 auto;
+	height: 300px;
+}
+
+.logoTools	{
+	padding: 0;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.logoTools img	{
+	padding-right: 35px;
+}
+
+.logoTools img:nth-of-type(7)	{
+	padding-right: 0px;
+}
+
+.logoTools img 	{
+	height: 100px;
+	margin: 0 auto;
+}
+
+#timeline	{
+	margin: 0 auto;
+	padding: 100px 0;
+	/* background-color: #e1d8d1; */
+	overflow: hidden;
+}
+
+#timeline h3	{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#about {
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px 0;
+	text-align: justify;
+	line-height: 2;
+	overflow: hidden;
+}
+
+.aboutImg	{
+	float: left;
+	width: 150px;
+}
+
+.avatar	{
+	width: 90px;
+	border-radius: 25%;
+}
+
+.aboutText	{
+	float: right;
+	width: 550px;
+}
+
+#eduWork h5	{
+	text-align: center;
+	padding: 100px 0;
+}
+
+.education	{
+	float: left;
+	width: 600px;
+}
+
+
+.wordExperience	{
+	float: right;
+	width: 600px;
+}
+
+/* FOOTER */
+
+#footer	{
+	margin: 0;
+	padding: 30px 0;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.footerTop	{
+	overflow: hidden;
+}
+
+.contact	{
+	width: 400px;
+	padding-bottom: 30px;
+	float: left;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.fab	{
+	font-size: 30px;
+	padding: 0 10px;
+}
+
+.fab:nth-of-type(3)	{
+	padding: 0px;
+}
+
+.fa-twitter	{
+	color: #1DA1F2;
+}
+
+.fa-linkedin	{
+	color: #0077B5;
+}
+	
+.fa-facebook-square	{
+	color: #3C5898;
+}
+
+.footerBottom	{
+	padding-top: 30px;
+	text-align: center;
+}
+
+.footerBottom p	{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* RESPONSIVE PAGE */
+
+@media screen and (min-width: 1024px) and (max-width: 1199px)	{
+	#wrapper	{
+		width: 960px;
+	}
+	
+	.nav ul {
+		padding-right: 40px;
+	}
+	
+	.logoTools img 	{
+		height: 75px;
+		margin: 0 auto;
+	}
+	
+	#eduWork h5	{
+		text-align: center;
+		padding: 100px 0;
+	}
+
+	.education	{
+		float: left;
+		width: 480px;
+	}
+
+
+	.wordExperience	{
+		float: right;
+		width: 480px;
+	}
+	
+	.contact	{
+		width: 320px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	#wrapper {
+		width: 740px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 767px)	{
+	#wrapper	{
+		width: 90%;
+	}
+	
+	.heroText	{
+		padding: 50px;
+		font-size: 24px;
+	}
+
+	.logoTools	{
+		padding-top: 50px;
+	}
+
+	.logoTools img	{
+		padding-right: 25px;
+	}
+
+	.logoTools img:nth-of-type(3)	{
+		padding-right: 0px;
+	}
+
+	.logoTools img:nth-of-type(5)	{
+		padding-right: 0px;
+	}
+
+	.logoTools img:nth-of-type(7)	{
+		padding-right: 0px;
+	}
+
+	.logoTools img 	{
+		height: 75px;
+
+	}
+	
+	/* ZAVRSITI RESPONSIVE ZA TELEFON. DIO IZNAD JE URADJEN */
+
+	#timeline	{
+		padding: 50px 0;
+	}
+
+	#about {
+		width: 100%;
+		margin: 0 auto;
+		
+	}
+
+	.aboutImg	{
+		margin: 0 auto;
+		display: block;
+		width: 100px;
+		text-align: center;
+	}
+
+	.avatar	{
+		margin: 0 auto;
+		display: block;
+		width: 90px;
+		border-radius: 25%;
+		text-align: center;
+	}
+
+	.aboutText	{
+		margin: 0 auto;
+		width: 360px;
+	}
+	
+	.education {
+		float: none;
+	}
+	
+}
+/* @media screen and (max-width:767px) { */
+	/* #wrapper { */
+		/* width: 90%; */
+	/* } */
+	/* #logo, #nav { */
+		/* float: none; */
+		/* text-align: center; */
+	/* } */
+	/* #nav ul li { */
+		/* float: none; */
+	/* } */
+	/* #heroText { */
+		/* position: relative; */
+		/* bottom: 0; */
+		/* left: 0; */
+	/* } */
+	/* .product { */
+		/* width: auto; */
+		/* float: none; */
+		/* margin: 0 0 30px 0; */
+	/* } */
+	/* .product img { */
+		/* width: 100%; */
+	/* } */
+	/* #main, #sidebar { */
+		/* width: auto; */
+		/* float: none; */
+		/* margin: 0; */
+	/* } */
+	/* #footer { */
+		/* text-align: center; */
+	/* } */
+	/* #footerLogo, .footerText { */
+		/* float: none; */
+		/* width: auto; */
+		/* margin: 0; */
+	/* } */
+/* } */
+
+
+
+
