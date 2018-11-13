@@ -59,8 +59,9 @@ a:active {
 }
 
 .logo img	{
-	height: 50px;
-	padding-top: 7px;
+	margin-top: -10px;
+	width: 80px;
+	height: 100%;
 }
 
 .nav	{
@@ -106,22 +107,30 @@ a:active {
 	text-shadow: 1px 1px #9C8C8C;
 }
 
+
+
+.button:hover {
+	color: #FFFFFF;
+	transition: 0.5s ease;
+}
+
 .button	{
 	border: 1px solid white;
 	border-radius: 5px;
 	padding: 0 10px;
-	color: aqua;
+	color: #6D5947;
 	text-shadow: none;
 }
 
+/* TOOLS */
+
 #tools	{
 	margin: 0 auto;
-	height: 300px;
+	/* height: 300px; */
 }
 
 .logoTools	{
-	padding: 0;
-	padding-top: 100px;
+	padding: 100px 0 0 0;
 	text-align: center;
 }
 
@@ -137,6 +146,8 @@ a:active {
 	height: 100px;
 	margin: 0 auto;
 }
+
+/* TIMELINE */
 
 #timeline	{
 	margin: 0 auto;
@@ -246,6 +257,8 @@ a:active {
 
 /* RESPONSIVE PAGE */
 
+/* MEDIA SCREEN AND (MIN-WIDTH: 1024PX) AND (MAX-WIDTH: 1199PX) */
+
 @media screen and (min-width: 1024px) and (max-width: 1199px)	{
 	#wrapper	{
 		width: 960px;
@@ -260,6 +273,8 @@ a:active {
 		margin: 0 auto;
 	}
 	
+	/* #eduWork */
+	
 	#eduWork h5	{
 		text-align: center;
 		padding: 100px 0;
@@ -269,7 +284,6 @@ a:active {
 		float: left;
 		width: 480px;
 	}
-
 
 	.wordExperience	{
 		float: right;
@@ -281,14 +295,65 @@ a:active {
 	}
 }
 
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 768PX) AND (MAX-WIDTH: 1023PX) */
+
 @media screen and (min-width:768px) and (max-width:1023px) {
 	#wrapper {
 		width: 740px;
 	}
 	
+	.logoTools	{
+		padding: 75px 0;
+		text-align: center;
+	}
+	
+	.logoTools img	{
+		padding-right: 10px;
+		height: 75px;
+	}
+	
+	.logoTools img:nth-of-type(7)	{
+		padding-right: 0px;
+	}
+
+	/* #eduWork */
+	
+	#eduWork {
+		margin: 0 auto;
+	}
+	
+	#eduWork h5	{
+		margin: 0 auto;
+	}
+
+	.education	{
+		width: 360px;
+	}
+
+	.wordExperience	{
+		width: 360px;
+	}
+	
+	/* FOOTER */
+
+	.contact	{
+		width: 230px;
+		padding: 0 25px 30px 0;
+		font-size: 1em;
+	}
+	
+	.contact:nth-of-type(3)	{
+		padding-right: 0px;
+	}
+
+	.fab	{
+		font-size: 25px;
+	}
+
 }
 
-
+/* MEDIA SCREEN AND (MAX-WIDTH: 767PX) */
 
 @media screen and (max-width: 767px)	{
 	#wrapper	{
@@ -322,85 +387,96 @@ a:active {
 
 	.logoTools img 	{
 		height: 75px;
-
 	}
 	
-	/* ZAVRSITI RESPONSIVE ZA TELEFON. DIO IZNAD JE URADJEN */
+	/* TIMELINE */
 
 	#timeline	{
 		padding: 50px 0;
+		width: 100%;
 	}
 
 	#about {
 		width: 100%;
-		margin: 0 auto;
-		
+		padding: 50px 0 25px 0;
+		line-height: 1.5;
 	}
 
 	.aboutImg	{
 		margin: 0 auto;
-		display: block;
-		width: 100px;
-		text-align: center;
+		float: none;
+		width: 100%;
 	}
 
 	.avatar	{
-		margin: 0 auto;
-		display: block;
 		width: 90px;
-		border-radius: 25%;
-		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 25px;
 	}
 
 	.aboutText	{
-		margin: 0 auto;
-		width: 360px;
-	}
-	
-	.education {
 		float: none;
+		width: 100%;
 	}
 	
+	/* #eduWork */
+	
+	#eduWork {
+		padding: 0 0 50px 0;
+		width: 100%;
+		text-align: justify;
+	}
+	
+	#eduWork h5	{
+		padding: 25px 0;
+		text-align: center;
+	}
+
+	.education	{
+		float: none;
+		width: 100%;
+	}
+
+	.wordExperience	{
+		float: none;
+		width: 100%
+	}
+	
+	/* FOOTER */
+	
+
+	#footer	{
+		width: 100%;
+		margin: 0 auto;
+		padding: 25px 0;
+		background-color: lightgray;
+	}
+
+	.footerTop	{
+		overflow: hidden;
+	}
+
+	.contact	{
+		width: 100%;
+		padding-bottom: 25px;
+		float: none;
+		font-size: 1em;
+	}
+
+	.fab	{
+		font-size: 30px;
+		padding: 0 25px;
+	}
+
+	.fab:nth-of-type(3)	{
+		padding: 0px;
+	}
+
+	.footerBottom	{
+		padding-top: 25px;
+	}
+
+
 }
-/* @media screen and (max-width:767px) { */
-	/* #wrapper { */
-		/* width: 90%; */
-	/* } */
-	/* #logo, #nav { */
-		/* float: none; */
-		/* text-align: center; */
-	/* } */
-	/* #nav ul li { */
-		/* float: none; */
-	/* } */
-	/* #heroText { */
-		/* position: relative; */
-		/* bottom: 0; */
-		/* left: 0; */
-	/* } */
-	/* .product { */
-		/* width: auto; */
-		/* float: none; */
-		/* margin: 0 0 30px 0; */
-	/* } */
-	/* .product img { */
-		/* width: 100%; */
-	/* } */
-	/* #main, #sidebar { */
-		/* width: auto; */
-		/* float: none; */
-		/* margin: 0; */
-	/* } */
-	/* #footer { */
-		/* text-align: center; */
-	/* } */
-	/* #footerLogo, .footerText { */
-		/* float: none; */
-		/* width: auto; */
-		/* margin: 0; */
-	/* } */
-/* } */
-
-
-
-
