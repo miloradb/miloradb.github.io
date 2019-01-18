@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home Page</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="calculator">
+			<h2>Latitude and Longitude Calculator</h2>
+			<h3>Degrees Minutes Seconds (DMS) to Decimal Degrees (DD)</h3>
+			
+			<div id="converter">
+				
+				<div>
+					<h5>Latitude</h5>
+					
+					<div class="lat">
+						<form>
+							<span class="inputLat"><input class="input" type="number" name="degree" id="degree" placeholder="Degree" /> °</span>
+							<span class="inputLat"><input class="input test" type="number" name="minute" id="minute" placeholder="Minute" /> '</span>
+							<span class="inputLat"><input class="input test" type="number" name="second" id="second" placeholder="Second" /> "</span>
+						</form>
+					</div>
+					
+					<h5>Longitude</h5>
+					<div class="lng">
+						<form>
+							<span class="inputLng"><input class="input" type="number" name="degree2" id="degree2" placeholder="Degree" /> °</span>
+							<span class="inputLng"><input class="input" type="number" name="minute2" id="minute2" placeholder="Minute" /> '</span>
+							<span class="inputLng"><input class="input" type="number" name="second2" id="second2" placeholder="Second" /> "</span>
+						</form>
+					</div>
+				</div>
+				
+				<input class="button" type="button" value="Convert to Decimal Degrees" id="button">
+				
+				<br><br>
+				
+				<div class="rezultat">
+					<div class="resultInput">
+						<p>Decimal Degrees Latitude</p>
+						<input class="result" type="text" name="latitude" id="latitude" placeholder="decimal degrees lat"> <span>°</span>
+					</div>
+					
+					<div class="resultInput">
+						<p>Decimal Degrees Longitude</p>
+						<input class="result result2" type="text" name="longitude" id="longitude" placeholder="decimal degrees long"> <span>°</span>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+						
+
+	<script type="text/javascript">
+		
+		function calculate()	{
+		
+			//SIRINA - latitude
+			
+			var degreeLat	= parseInt(document.getElementById("degree").value);
+			var minLat		= parseInt(document.getElementById("minute").value);
+			var secLat		= parseInt(document.getElementById("second").value);
+			
+			//DUZINA - longitude
+			
+			var degreeLng	= parseInt(document.getElementById("degree2").value);
+			var minLng		= parseInt(document.getElementById("minute2").value);
+			var secLng		= parseInt(document.getElementById("second2").value);
+		
+	
+			var latitudee	= degreeLat + (minLat / 60) + (secLat / 3600);
+			var longitudee	= degreeLng + ((minLng / 60) + (secLng / 3600));
+			
+			var LTD	= latitudee.toFixed(8);
+			var LNG	= longitudee.toFixed(8);
+
+		
+			document.getElementById("latitude").value = LTD;
+			document.getElementById("longitude").value = LNG;
+			
+			//Validacija za SIRINU
+			
+			if(document.getElementById("degree").value == "") {
+				document.getElementById("latitude").value = "0.00000000";
+			} else if (document.getElementById("minute").value == "") {
+				document.getElementById("latitude").value = "0.00000000";
+			} else if (document.getElementById("second").value == "") {
+				document.getElementById("latitude").value = "0.00000000";
+			}
+			
+			//Validacija za DUZINU
+			
+			if(document.getElementById("degree2").value == "") {
+				document.getElementById("longitude").value = "0.00000000";
+			} else if (document.getElementById("minute2").value == "")	{
+				document.getElementById("longitude").value = "0.00000000";
+			} else if (document.getElementById("second2").value == "") {
+				document.getElementById("longitude").value = "0.00000000";
+			}
+
+		}
+		
+				
+		document.getElementById("button").onclick	= function()	{
+														calculate();
+													};
+													
+
+		</script>
+
+	</body>
+	
+	
+	
+	
+</html>
