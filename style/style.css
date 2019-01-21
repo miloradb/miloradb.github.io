@@ -2,232 +2,228 @@
 /* CSS Document */
 
 body {
-	margin:0;
+	margin:0 auto;
 	padding:0;
-	font-family: 'Roboto', sans-serif;
-	font-size:14px;
-	font-weight:300;
+	font-family: 'Open Sans', sans-serif;
+	/* font-size: 18px; */
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight:900;
-	margin:1em 0 0.5em;
-}
-
-h1 { font-size:3em;}
-h2 { font-size:2.2em;}
-h3 { font-size:2em;}
-h4 { font-size:1.6em;}
-h5 { font-size:1.4em;}
-h6 { font-size:1.2em;}
-
-
-a:link,
-a:visited {
-	text-decoration:none;
-	color: ;
-}
-a:hover {
-
-}
-a:active {
-	color:
-}
-
-/* WRAPPER */
-
-#wrapper	{
-	width: 1200px;
-	margin: 0 auto;
-}
-
-#hero	{
-	background-image: url(../images/hero10.jpeg);
-	height: 600px;
-	background-position: center top;
-	background-size: cover;
-}
-
-#header	{
-	overflow: hidden;
-	background: rgba(0, 0, 0, 0.3);
-	height: 60px;
-}
-
-.logo	{
-	float: left;
-}
-
-.logo img	{
-	margin-top: -10px;
-	width: 80px;
-	height: 100%;
-}
-
-.nav	{
-	float: right;
-}
-
-.nav ul	{
-	list-style: none;
+h1, h2, h3, h4, h5, h6	{
 	margin: 0;
 	padding: 0;
 }
 
-.nav ul li	{
-	float: left;
-	padding: 20px 0 20px 30px;
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
-.nav ul li a	{
-	font-size: 17px;
+#wrapper	{
+	max-width: 1200px;
+	/* width: 95%; */
+	margin: 0 auto;
+}
+
+#hero	{
+	background-image: url(../images/hero.jpeg);
+	height: 600px;
+	width: 100%;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#main-header	{
+	background: rgba(0, 0, 0, 0.3);
+	height: 60px;
+}
+
+.header	{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo	{
+	display: flex;
+	align-items: center;
+}
+
+.logo img	{
+	height: 40px;
+}
+
+nav	{
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+
+nav ul	{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav ul li	{
+	margin-right: 30px;
 	display: block;
 }
 
-.nav ul li a:link,
-.nav ul li a:visited {
+
+nav ul li:nth-of-type(4)	{
+	margin-right: 0;
+}
+
+
+nav ul li a:link,
+nav ul li a:visited {
+	font-size: 17px;
 	text-decoration:none;
-	color: #FFFFFF;
 }
 
-.nav ul li a:hover {
-	color: #c6beb3;
+nav ul li a:hover {
+	color: #C6BEB3;
+	transition: 0.3s all ease;
 }
 
 
-.heroText	{
-	margin: 0 auto;
-	color: white;
-	text-align: center;
-	padding: 70px;
+#hero-about	{
+	
+}
+
+.hero-text	{
+	height: 540px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text p	{
+	margin: 0;
+	padding: 20px;
 	font-size: 32px;
-}
-
-.heroText	p	{
-	text-shadow: 1px 1px #9C8C8C;
-}
-
-.button:hover {
 	color: #FFFFFF;
-	transition: 0.5s ease;
+	text-shadow: 1px 1px #9C8C8C;
+	text-align: center;
 }
 
 .button	{
 	border: 1px solid white;
 	border-radius: 5px;
-	padding: 0 10px;
 	color: #6D5947;
 	text-shadow: 1px #FFFFFF;
+	padding: 0px 5px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0px 2px;
+}
+
+.button:hover {
+	color: #FFFFFF;
+	transition: 0.3s all ease;
+}
+
+
+/* TITLE */
+
+#main-title	{
+	margin: 200px auto;
+	padding: 50px 0 30px 0;
+	background-color: #FAFAFA;
+}
+
+#main-title h1	{
+	padding-bottom: 50px;
+}
+
+#title	{
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+#title h3	{
+	padding: 0 0 25px 0;
+}
+
+.web-design	{
+	max-width: 560px;
+	width: 100%;
+	padding: 20px;
+}
+
+.geoinformatics	{
+	max-width: 560px;
+	width: 100%;
+	padding: 20px;
+}
+
+.title-image	{
+	max-width: 500px;
+	width: 100%;
 }
 
 /* TOOLS */
 
-#tools	{
-	margin: 0 auto;
-	/* height: 300px; */
-}
-
-.logoTools	{
-	padding: 100px 0 0 0;
-	text-align: center;
-}
-
-.logoTools img	{
-	padding-right: 35px;
-}
-
-.logoTools img:nth-of-type(7)	{
-	padding-right: 0px;
-}
-
-.logoTools img 	{
-	height: 100px;
-	margin: 0 auto;
-}
-
-/* TIMELINE */
-
-#timeline	{
-	margin: 0 auto;
-	padding: 100px 0;
-	/* background-color: #e1d8d1; */
-	overflow: hidden;
-}
-
-#timeline h3	{
-	text-align: center;
-	margin: 0;
+#main-tools	{
+	margin: 200px auto;
 	padding: 0;
 }
 
-#about {
-	width: 700px;
+#main-tools h1	{
+	padding-bottom: 50px;
+}
+
+.logo-tools	{
 	margin: 0 auto;
-	padding: 50px 0;
-	text-align: justify;
-	line-height: 2;
-	overflow: hidden;
+	padding: 25px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
-.aboutImg	{
-	float: left;
-	width: 150px;
+#tools	{
+	height: 100px;
 }
 
-.avatar	{
-	width: 90px;
-	border-radius: 25%;
-}
-
-.aboutText	{
-	float: right;
-	width: 550px;
-}
-
-#eduWork h5	{
-	text-align: center;
-	padding: 100px 0;
-}
-
-.education	{
-	float: left;
-	width: 600px;
-}
-
-
-.wordExperience	{
-	float: right;
-	width: 600px;
-}
 
 /* FOOTER */
 
 #footer	{
-	margin: 0;
-	padding: 30px 0;
-	overflow: hidden;
-	background-color: #D8D8D8;
+	margin: 0 auto;
+	padding: 50px 0;
+	background-color: #FAFAFA;
 }
 
-.footerTop	{
-	overflow: hidden;
+#footer a	{
+	color: blue;
 }
 
-.contact	{
-	width: 400px;
-	padding-bottom: 30px;
-	float: left;
-	text-align: center;
-	font-size: 1.2em;
+.contacts	{
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.social-networks	{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .fab	{
 	font-size: 30px;
-	padding: 0 10px;
-}
-
-.fab:nth-of-type(3)	{
-	padding: 0px;
 }
 
 .fa-twitter	{
@@ -242,238 +238,427 @@ a:active {
 	color: #3C5898;
 }
 
-.footerBottom	{
-	padding-top: 30px;
+.footer-bottom p	{
+	margin: 0;
+	padding: 50px 0 0 0;
 	text-align: center;
 }
 
-.footerBottom p	{
-	margin: 0;
-	padding: 0;
+.contact img	{
+	height: 40px;
 }
+
+
+
 
 
 /* RESPONSIVE PAGE */
 
-/* MEDIA SCREEN AND (MIN-WIDTH: 1024PX) AND (MAX-WIDTH: 1199PX) */
 
-@media screen and (min-width: 1024px) and (max-width: 1199px)	{
+/* MEDIA SCREEN AND (MIN-WIDTH: 992PX) AND (MAX-WIDTH: 1199PX) */
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
 	#wrapper	{
 		width: 960px;
 	}
-	
-	.nav ul {
-		padding-right: 40px;
-	}
-	
-	.logoTools img 	{
-		height: 75px;
-		margin: 0 auto;
-	}
-	
-	/* #eduWork */
-	
-	#eduWork h5	{
-		text-align: center;
-		padding: 100px 0;
+
+
+	.hero-text	{
+		height: 500px;
 	}
 
-	.education	{
-		float: left;
-		width: 480px;
+	.hero-text p	{
+		margin: 0;
+		padding: 15px;
+		font-size: 28px;
 	}
 
-	.wordExperience	{
-		float: right;
-		width: 480px;
+	/* TITLE */
+
+	#main-title	{
+		margin: 150px auto;
+		padding: 40px 0 30px 0;
+		background-color: #FAFAFA;
 	}
-	
-	.contact	{
-		width: 320px;
+
+	.web-design	{
+		max-width: 448px;
+		width: 100%;
+		padding: 10px;
 	}
+
+	.geoinformatics	{
+		max-width: 448px;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.title-image	{
+		max-width: 380px;
+		width: 100%;
+	}
+
+	/* TOOLS */
+
+	#main-tools	{
+		margin: 150px auto;
+	}
+
+
 }
 
 
-/* MEDIA SCREEN AND (MIN-WIDTH: 768PX) AND (MAX-WIDTH: 1023PX) */
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+/* MEDIA SCREEN AND (MIN-WIDTH: 768PX) AND (MAX-WIDTH: 991PX) */
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+	/*HERO*/
+	
 	#wrapper {
 		width: 740px;
 	}
 	
-	.logoTools	{
-		padding: 75px 0;
-		text-align: center;
+	#hero	{
+		height: 550px;
+		
 	}
 	
-	.logoTools img	{
-		padding-right: 10px;
-		height: 75px;
+	.hero-text	{
+		height: 500px;
 	}
 	
-	.logoTools img:nth-of-type(7)	{
-		padding-right: 0px;
+	.hero-text p	{
+		font-size: 26px;
+	}
+	
+	
+	/* TITLE */
+
+	#main-title	{
+		margin: 100px auto;
+		padding: 40px 0 30px 0;
+		background-color: #FAFAFA;
 	}
 
-	/* #eduWork */
-	
-	#eduWork {
-		margin: 0 auto;
-	}
-	
-	#eduWork h5	{
-		margin: 0 auto;
+	.web-design	{
+		max-width: 364px;
+		width: 100%;
+		padding: 10px;
 	}
 
-	.education	{
-		width: 360px;
+	.geoinformatics	{
+		max-width: 364px;
+		width: 100%;
+		padding: 10px;
 	}
 
-	.wordExperience	{
-		width: 360px;
+	.title-image	{
+		max-width: 340px;
+		width: 100%;
 	}
+	
+	
+	/* TOOLS */
+	
+	#main-tools	{
+		margin: 100px auto;
+	}
+	
 	
 	/* FOOTER */
 
-	.contact	{
-		width: 230px;
-		padding: 0 25px 30px 0;
-		font-size: 1em;
+	#footer	{
+		padding: 25px 0;
+	}
+
+	.contact {
+		width: 100%;
+		text-align: center;
 	}
 	
-	.contact:nth-of-type(3)	{
-		padding-right: 0px;
+	.social-networks	{
+		display: flex;
+		justify-content: center;
 	}
 
 	.fab	{
-		font-size: 25px;
+		margin: 0 30px 10px 30px;
 	}
 
+	.footer-bottom p	{
+		margin: 0;
+		padding: 20px 0 0 0;
+	}
 }
 
-/* MEDIA SCREEN AND (MAX-WIDTH: 767PX) */
 
-@media screen and (max-width: 767px)	{
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 576PX) AND (MAX-WIDTH: 767PX) */
+
+@media screen and (min-width: 576px) and (max-width: 767px)
+{
+	/* HERO */
+	
+	#wrapper	{
+		width: 540px;
+	}
+	
+	#hero	{
+		height: 420px;
+	}
+	
+	#main-header	{
+		height: 50px;
+	}
+
+	.logo img	{
+		height: 40px;
+	}
+
+	nav	{
+		height: 50px;
+	}
+
+	nav ul li	{
+		margin-right: 20px;
+	}
+
+	nav ul li a:link,
+	nav ul li a:visited {
+		font-size: 15px;
+	}
+
+	.hero-text	{
+		height: 350px;
+	}
+
+	.hero-text p	{
+		padding: 10px;
+		font-size: 24px;
+	}
+
+	.button:hover {
+		color: #FFFFFF;
+	}
+	
+	.button:active {
+		color: #FFFFFF;
+	}
+	
+	
+	/* TITLE */
+
+	#main-title	{
+		margin: 50px auto;
+		padding: 50px 0 30px 0;
+	}
+
+	#main-title h1	{
+		padding-bottom: 30px;
+	}
+
+	.web-design	{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.geoinformatics	{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.title-image	{
+		max-width: 400px;
+		width: 100%;
+	}
+	
+	
+	/* TOOLS */
+
+	#main-tools	{
+		margin: 50px auto;
+	}
+
+	#main-tools h1	{
+		padding-bottom: 30px;
+	}
+
+	
+		/* FOOTER */
+
+	#footer	{
+		padding: 25px 0;
+
+	}
+
+	.contact {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.social-networks	{
+		display: flex;
+		justify-content: center;
+	}
+
+	.fab	{
+		margin: 0 30px 10px 30px;
+	}
+
+	.footer-bottom p	{
+		margin: 0;
+		padding: 20px 0 0 0;
+	}
+	
+}
+
+
+
+/* MEDIA SCREEN AND (MAX-WIDTH: 575PX) */
+
+@media screen and (max-width: 575px)	{
 	#wrapper	{
 		width: 90%;
 	}
 	
-	.heroText	{
-		padding: 25px;
-		font-size: 24px;
-	}
-
-	.logoTools	{
-		padding-top: 50px;
-	}
-
-	.logoTools img	{
-		padding-right: 25px;
-	}
-
-	.logoTools img:nth-of-type(3)	{
-		padding-right: 0px;
-	}
-
-	.logoTools img:nth-of-type(5)	{
-		padding-right: 0px;
-	}
-
-	.logoTools img:nth-of-type(7)	{
-		padding-right: 0px;
-	}
-
-	.logoTools img 	{
-		height: 75px;
-	}
-	
-	/* TIMELINE */
-
-	#timeline	{
-		padding: 50px 0;
+	#hero	{
 		width: 100%;
 	}
 
-	#about {
-		width: 100%;
-		padding: 50px 0 25px 0;
-		line-height: 1.5;
+	#main-header	{
+		height: 50px;
 	}
 
-	.aboutImg	{
-		margin: 0 auto;
-		float: none;
-		width: 100%;
+	.logo img	{
+		height: 30px;
 	}
 
-	.avatar	{
-		width: 90px;
+	nav	{
+		height: 50px;
+	}
+
+	nav ul li	{
+		margin-right: 28px;
+
+	}
+	nav ul li:nth-of-type(4)	{
+		margin-right: 0;
+	}
+
+	nav ul li a:link,
+	nav ul li a:visited {
+		font-size: 15px;
+	}
+
+	.hero-text	{
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-bottom: 25px;
-	}
-
-	.aboutText	{
-		float: none;
-		width: 100%;
-	}
-	
-	/* #eduWork */
-	
-	#eduWork {
-		padding: 0 0 50px 0;
-		width: 100%;
-		text-align: justify;
-	}
-	
-	#eduWork h5	{
-		padding: 25px 0;
 		text-align: center;
+		margin: 0;
+		padding: 0;
+
 	}
 
-	.education	{
-		float: none;
+	.hero-text p	{
+		/* padding: 10px; */
+		font-size: 22px;
+	}
+			
+	.button:active {
+		color: #FFFFFF;
+	}
+	
+	
+	/* TITLE */
+	
+	#main-title	{
+		margin: 50px auto;
+		padding: 50px 0 30px 0;
+	}
+
+	#main-title h1	{
+		padding-bottom: 30px;
+	}
+
+
+	.web-design	{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.geoinformatics	{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.title-image	{
 		width: 100%;
 	}
 
-	.wordExperience	{
-		float: none;
-		width: 100%
+	#main-title h1	{
+		padding-bottom: 30px;
 	}
+
 	
+	/* TOOLS */
+
+	#main-tools	{
+		margin: 50px auto;
+	}
+
+	#main-tools h1	{
+		padding-bottom: 30px;
+	}
+
+	.logo-tools	{
+		padding: 10px 0;
+		justify-content: space-around;
+	}
+
+
 	/* FOOTER */
-	
 
 	#footer	{
 		width: 100%;
-		margin: 0 auto;
 		padding: 25px 0;
+
 	}
 
-	.footerTop	{
-		overflow: hidden;
-	}
-
-	.contact	{
+	.contact {
 		width: 100%;
-		padding-bottom: 25px;
-		float: none;
-		font-size: 1em;
+		text-align: center;
+	}
+	
+	.social-networks	{
+		display: flex;
+		justify-content: center;
 	}
 
 	.fab	{
-		font-size: 30px;
-		padding: 0 25px;
+		margin: 0 30px 30px 0;
 	}
 
-	.fab:nth-of-type(3)	{
-		padding: 0px;
+	.footer-bottom p	{
+		margin: 0;
+		padding: 20px 0 0 0;
 	}
-
-	.footerBottom	{
-		padding-top: 25px;
-	}
-
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

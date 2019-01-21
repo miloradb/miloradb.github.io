@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: 'Roboto', Arial, sans-serif;
+	color:#363636;
+	font-weight:300;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:900;
+	margin:1em 0 0.5em;
+	color:#696969;
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+p {
+	margin:0.3em 0 0.5em;
+}
+img {
+	vertical-align:bottom;
+	max-width:100%;
+}
+
+a:link,
+a:visited {
+	text-decoration:none;
+	color:#e84e1b;
+}
+a:hover {
+	color:#f39200;
+}
+a:active {
+	color:#696969;
+}
+
+p	{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+#headerTop	{
+	background: #282828;
+	color: #BEBEBE;
+	overflow: hidden;
+	padding: 4px 0 1px;
+	font-weight: strong;
+	margin: 0 auto;
+}
+
+.headerTopLeft	{
+	float: left;
+}
+
+.phone	{
+	padding-right: 30px;
+}
+
+.headerTopRight	{
+	float: right;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+.icons	{
+	padding-left: 5px;
+}
+
+.wrapper	{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.logo	{
+	height: 40px;
+	padding: 20px 0;
+}
+
+.nav	{
+	float: right;
+}
+
+.nav ul {
+	list-style: none;
+	
+}
+
+.nav ul li {
+	float: left;
+	padding: 20px;
+	font-weight: 500;
+}
+
+.nav ul li a	{
+	color: #282828;
+}
+.nav ul li:nth-of-type(5)  {
+	padding-right: 0px;
+}
+
+
+#hero	{
+	background-image: url("fajlovi/hero.jpg");
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 200px 0; 
+}
+
+
+#hero h1	{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#hero p	{
+	color: #FFFFFF;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.wrapper h2 {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.lm	{
+	text-align: center;
+	padding: 17px;
+	width: 150px;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+	margin: 0 auto;	
+}
+
+.lm a	{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#products	{
+	background-color: #E6E6E6;
+	margin: 0;
+	padding-bottom: 120px;
+	padding-top: 10px;
+}
+
+#products .wrapper::after	{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#products p	{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.product {
+	float: left;
+	width: 270px;
+	margin-right: 40px;
+	background: #FFFFFF;
+}
+
+.product:nth-of-type(4)  {
+	margin-right: 0px;
+}
+
+.product h3	{
+	text-align: center;
+}
+
+.more	{
+	color: #FF4000;
+	text-align: center;
+	padding: 15px;
+	width: 50%;
+	border: 2px solid #FF4000;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+#about	{
+	background-image: url("fajlovi/about.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 120px 0;
+}
+
+.about_window h3	{
+	color: #FFFFFF;
+	padding-bottom: 20px ;
+
+}
+.about_window	{
+	width: 500px;
+	background: rgba(0, 0, 0, 0.2);
+	color: #FFFFFF;
+	padding: 30px;
+}
+
+.about_window p	{
+	font-size: 16px;
+}
+
+.learn	{
+	padding: 14px 30px;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+
+.learn a	{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#partners	{
+	padding: 50px 0;
+	overflow: hidden;
+
+}
+.partner h4	{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.fooBar {
+	float: left;
+	margin-right: 37px;
+	padding: 50px 0;
+}
+
+.fooBar:nth-of-type(5)  {
+	margin-right: 0px;
+}
+
+#footer	{
+	background-color: #383838;
+	padding: 50px 0;
+	height: 370px;
+}
+
+.ciljevi	{
+	float: left;
+	color: #FFFFFF;
+}
+
+.ciljevi h4	{
+	color: #FFFFFF
+}
+
+.footerLogo	{
+	float: right;
+}
+
+.misija	{
+	width: 300px;
+	float: left;
+	padding-right: 20px;
+}
+
+.vizija	{
+	width: 300px;
+	float: left;
+}
+
+.sadrzaj	{
+	overflow: hidden;
+	padding-bottom: 35px;
+}
+
+.footerEnd	{
+	color:	#FFFFFF;
+	padding-top: 35px;
+}
+
+.backButton	{
+	padding: 10px 20px;
+	float: right;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.backButton a	{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.wrapper {
+		width: 740px;
+	}
+	
+	.product {
+		float: left;
+		width: 170px;
+		margin-right: 15px;
+		background: #FFFFFF;
+		font-size: 80%;
+	}
+	
+	.about_window	{
+		width: 320px;
+		font-size: 70%;
+	}
+	
+	.fooBar {
+		width: 140px;
+		float: left;
+		margin-right: 10px;
+		padding: 50px 0;
+	}
+	#footer	{
+		padding: 10px 0 50px;
+		overflow: hidden;
+	}
+	
+	.misija	{
+		width: 250px;
+		float: left;
+}
+
+	.vizija	{
+		width: 250px;
+		float: left;
+	}
+	
+	.footerEnd	{
+		padding-top: 25px;
+	}
+
+	.backButton	{
+		padding: 8px 15px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

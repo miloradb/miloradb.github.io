@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:900;
+
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+
+a:link,
+a:visited {
+	text-decoration:none;
+	color: #AC1E34;
+}
+a:hover {
+	/* background-color: #F2F2F2; */
+	/* color: #29AE4A; */
+}
+a:active {
+	color:
+}
+
+/* wrapper*/
+
+#wrapper	{
+	margin: 0 auto;
+	padding: 0px;
+	width: 1000px;
+	overflow: hidden;
+}
+
+.logo	{
+	height: 45px;
+	float: left;
+	padding-right: 25px;
+}
+
+
+/* BLOG */
+
+
+#blog	{
+
+}
+
+.headerBlog	{
+	overflow: hidden;
+}
+
+.logoBlog	{
+	height: 45px;
+	padding: 15px 0;
+	float: left;
+}
+
+.social	{
+	float: right;
+	margin: 0;
+	padding: 28.5px 0 0 0;
+}
+
+.fb {
+	color: #3B5998;
+}
+
+.tw	{
+	color: #0084b4;
+}
+
+.li	{
+	color: #0077B5;
+}
+
+.headerCover	{
+	height: 200px;
+	background-image: url("../../images/hero_blog.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center bottom;
+	padding-top: 150px;
+}
+
+.headerBackground	{
+	color: #AC1E34;
+	font-size: 40px;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.blog	{
+	
+}
+
+.postDate	{
+	font-weight: bold;
+}
+

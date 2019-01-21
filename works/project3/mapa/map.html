@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>National parks</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	
+		
+	</head>
+	
+	<body>
+		<div id="header">
+			<div>
+				<div class="title">
+					<p>Web Map of European National Parks<p>
+				</div>
+				<div class="moto">
+					<p>Nature Yourself!</p>
+					<img src="slike/logo.png">
+				</div>
+
+			</div>
+		</div>
+		
+		
+		<div id="main">
+		
+			<div class="dashboard">
+				<div class="content">
+					<p>Lista država:</p>
+						<select>
+							<option value="#">Izaberi državu</option>
+							<option value="slo">Slovenija</option>
+							<option value="hrv">Hrvatska</option>
+							<option value="bih">Bosna i Hercegovina</option>
+							<option value="srb">Srbija</option>
+							<option value="cg">Crna Gora</option>
+							<option value="mkd">Makedonija</option>						
+						</select>
+				</div>
+			</div>
+
+			
+			<div id="mapid">
+			
+				<script src="locations.js">
+					
+					
+				</script>
+				
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+			<p>Copyright &copy; 2018</p>
+		</div>
+	
+	</body>
+
+		
+		
+</html>
