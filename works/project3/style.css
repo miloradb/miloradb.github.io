@@ -189,8 +189,13 @@ a:active {
 	text-align: center;
 }
 
+.article-image	{
+	max-width: 570px;
+	width: 100%;
+}
+
 .article-image img	{
-	max-width: 560px;
+	/* max-width: 560px; */
 	width: 100%;
 }
 
@@ -216,8 +221,13 @@ a:active {
 	text-align: center;
 }
 
-.news1 {
-	width: 370px;
+.single-news {
+	max-width: 370px;
+	width: 100%;
+}
+
+.single-news img	{
+	width: 100%;
 }
 
 .news1 p	{
@@ -384,7 +394,6 @@ a:active {
 
 	.actual	{
 		width: 300px;
-		border-radius: 5px;
 	}
 	
 	.actual h2	{
@@ -571,13 +580,24 @@ a:active {
 	.main	{
 		padding-top: 75px;
 		margin: 0;
-		
 	}
 	
 	.actual	{
 		width: 100%;
-		padding: 10px 0 10px 10px;
+		padding: 10px 0;
 		margin: 0;
+	}
+		
+	.actual p	{
+		padding-left: 10px;
+	}
+	
+	.actual h2	{
+		padding-left: 10px;
+	}
+	
+	.actual a	{
+		margin-left: 10px;
 	}
 	
 	
