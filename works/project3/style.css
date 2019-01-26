@@ -36,8 +36,8 @@ a:active {
 }
 
 #wrapper	{
-	/* width: 90%; */
-	width: 1200px;
+	width: 90%;
+	/* width: 1200px; */
 	margin: 0 auto;
 	padding: 0;
 }
@@ -122,7 +122,6 @@ a:active {
 	background-repeat: no-repeat;
 	height: 550px;
 	color: #F1EEF6;
-	/* border-bottom: 3px solid #F0F0F0; */
 }
 
 .main	{
@@ -178,6 +177,7 @@ a:active {
 .article p	{
 	margin: 0;
 	padding: 20px 0;
+	width: 100;
 	text-align: justify;
 }
 
@@ -267,12 +267,10 @@ a:active {
 	text-align: center;
 }
 
-
-
 #footer	{
 	background-color: #034D78;
 	color: #f1eef6;
-	padding: 50px;	
+	padding: 50px 0;	
 	font-weight: 500;
 	border-top: 3px solid #03263A;
 	font-size: 24px;
@@ -323,6 +321,10 @@ a:active {
 
 .footer-bottom	img {
 	width: 70px;
+}
+
+.footer-button	{
+	overflow: hidden;
 }
 
 .back-button	{
@@ -386,13 +388,27 @@ a:active {
 	}
 	
 	.actual h2	{
-		/* padding: 0; */
-		/* margin: 0; */
 		font-size: 24px;
 	}
 
 	.button	{
 		padding: 8px 16px;
+	}
+	
+	#section	{
+		margin: 120px 0;
+	}
+
+	#news	{
+		margin: 120px 0;
+	}
+
+	#activities	{
+		margin: 120px 0;
+	}
+
+	#partners	{
+		margin: 120px 0;
 	}
 
 		
@@ -406,11 +422,6 @@ a:active {
 		width: 90%;
 	}
 	
-	#main-header	{
-		font-weight: 500;
-		border-bottom: 3px solid #03263A;
-		justify-content: center;
-	}
 	
 	#header	{
 		display: flex;
@@ -445,11 +456,32 @@ a:active {
 		padding: 0;
 	}
 	
+	.main	{
+		padding-top: 150px;
+	}
 	
+	#hero	{
+		height: 450px;
+	}
 	
+	#section	{
+		margin: 100px 0;
+	}
+
+	#news	{
+		margin: 100px 0;
+	}
+
+	#activities	{
+		margin: 100px 0;
+	}
+
+	#partners	{
+		margin: 100px 0;
+	}
 	
 	#footer	{
-		padding: 30px;
+		padding: 30px 0;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -532,45 +564,37 @@ a:active {
 		padding: 0;
 	}
 	
+	#hero	{
+		height: 350px;
+	}
 	
+	.main	{
+		padding-top: 75px;
+		margin: 0;
+		
+	}
+	
+	.actual	{
+		width: 100%;
+		padding: 10px 0 10px 10px;
+		margin: 0;
+	}
+	
+	
+	#section	{
+		margin: 100px 0;
+	}
+
+	#news	{
+		margin: 100px 0;
+	}
+
+	#activities	{
+		margin: 100px 0;
+	}
+
+	#partners	{
+		margin: 100px 0;
+	}
 	
 }
-
-/* @media screen and (max-width:767px) { */
-	/* #wrapper { */
-		/* width: 90%; */
-	/* } */
-	/* #logo, #nav { */
-		/* float: none; */
-		/* text-align: center; */
-	/* } */
-	/* #nav ul li { */
-		/* float: none; */
-	/* } */
-	/* #heroText { */
-		/* position: relative; */
-		/* bottom: 0; */
-		/* left: 0; */
-	/* } */
-	/* .product { */
-		/* width: auto; */
-		/* float: none; */
-		/* margin: 0 0 30px 0; */
-	/* } */
-	/* .product img { */
-		/* width: 100%; */
-	/* } */
-	/* #main, #sidebar { */
-		/* width: auto; */
-		/* float: none; */
-		/* margin: 0; */
-	/* } */
-	/* #footer { */
-		/* text-align: center; */
-	/* } */
-	/* #footerLogo, .footerText { */
-		/* float: none; */
-		/* width: auto; */
-		/* margin: 0; */
-	/* } */
-/* } */
