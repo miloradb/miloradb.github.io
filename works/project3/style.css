@@ -119,6 +119,7 @@ a:active {
 
 .toggle	{
 	display: none;
+	color: F1EEF6;
 }
 
 #hero	{
@@ -476,9 +477,9 @@ a:active {
 		margin-bottom: 15px;
 		font-size: 16px;
 		color: #F1EEF6;
+		cursor: pointer;
 		/* text-align: center; */
 		/* line-height: 40px; */
-		/* cursor: pointer; */
 		/* width: 100%; */
 		/* height: 40px; */
 		/* background: #dbdbdb; */
@@ -635,15 +636,15 @@ a:active {
 		padding: 0;
 	}
 	
-		.toggle {
+	.toggle {
 		clear: both;
 		display: block;
 		margin-bottom: 15px;
 		font-size: 16px;
 		color: #F1EEF6;
+		cursor: pointer;
 		/* text-align: center; */
 		/* line-height: 40px; */
-		/* cursor: pointer; */
 		/* width: 100%; */
 		/* height: 40px; */
 		/* background: #dbdbdb; */
