@@ -6,7 +6,7 @@
 		<title>The Smart Miller</title>
 		<link href="css/style.css" type="text/css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&amp;subset=latin-ext" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">		
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
 		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 	</head>
@@ -14,139 +14,203 @@
 	<body>
 	
 		<div id="hero">
+		
 			<div id="wrapper">
 				
 				<div class="header">
-					<span class="headerLeft">
-						<div>
-							<img src="images/logo_text_white.png" class="logo">
-						</div>
-						<div class="nav">
+				
+					<div class="header-left">
+					
+						<img src="images/logo_text_white.png" class="logo">
+					
+						<nav>
 							<ul>
 								<li><a href="index.html">Home</li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="blog/index.php">Blog</a></li>
 							</ul>
-						</div>
-					</span>
+						</nav>
+						
+					</div> <!-- end of header-left -->
 					
-					<span class="headerRight">
-						<a href="../login.html" class="headerButton" target="_blank">Log In</a>
-						<a href="../register.html" class="headerButton" target="_blank">Sign Up</a>
-					</span>
-				</div> <!-- end of header-->
+					<div class="header-right">
+					
+						<a href="../login.html" class="header-button" target="_blank">Log In</a>
+						<a href="../register.html" class="header-button" target="_blank">Sign Up</a>
+						
+					</div> <!-- end of header-right -->
 				
-			</div> <!-- end of wrapper-->
-			
-		<div class="heroText" style="background-color:rgba(255, 255, 255, 0.3);">
-			<div class="wrapper">
-				<p>Digitalise Your Yields and always have informations about it in your pocket!
-				<br><br>
-				<a href="../register.html" class="headerButton" target="_blank">Let's get started!</a>
-			</div>
-		</div>
-	
-		</div> <!-- end of hero-->
+				</div> <!-- end of header -->
+				
+			</div>  <!-- end of wrapper -->
+				
+			<div class="hero-text">
+						
+				<div class="hero-info">
+				
+					<div id="wrapper">
+					
+						<p>Digitalise Your Yields and always have informations about it in your pocket!
+						<br><br>
+						<a href="../register.html" class="header-button" target="_blank">Let's get started!</a>
+						
+					</div> <!-- end of wrapper -->
+					
+				</div>  <!-- end of hero-info -->
+				
+			</div> <!-- end of hero-text -->
 
+		</div> <!-- end of hero -->
+		
+		
 		<div id="how-it-works">
+		
 			<div id="wrapper">
-				<p>
-				<h5>How it works</h5>
-				<strong>TheSmartMiller</strong> application is designed to be easy to use and acceptable to everyone.</p>
+			
+				<div class="how-it-works-title">
 				
-				<div class="userInterface">
-					<img src="images/dashboard.png">
-				</div>
-			</div>
-		</div>  <!-- end of who-are-you-->
+					<h5>HOW IT WORKS</h5>
+					<p><strong>TheSmartMiller</strong> application is designed to be easy to use and acceptable to everyone.</p>
+					
+				</div> <!-- end of how-it-works-title -->
+				
+				<div class="user-interface">
+				
+					<img src="images/dashboard.png" class="dashboard">
+				
+				</div> <!-- end of user-interface -->
+			
+			</div> <!-- end of wrapper -->
+		
+		</div> <!-- end of how-it-works -->
+		
 		
 		<div id="who-are-you">
-			<div id="wrapper">
-				<p>
-				<h5>Who Are You</h5>
-				If you are a smaller or larger farmer or owner of a farming cooperative, and you want to keep track of your work, incomes, outcomes and yields, <strong>TheSmartMiller</strong> is the right solution for you.</p>
-			</div>
-		</div>  <!-- end of who-are-you-->
 		
-		<div id="iconsAbout">
 			<div id="wrapper">
+			
+				<div class="who-are-you-text">
+			
+					<h5>WHO ARE YOU</h5>
+					<p>If you are a smaller or larger farmer or owner of a farming cooperative, and you want to keep track of your work, incomes, outcomes and yields, <strong>TheSmartMiller</strong> is the right solution for you.</p>
+				
+				</div> <!-- end of who-are-you-text -->
+				
+			</div> <!-- end of wrapper -->
+			
+		</div>  <!-- end of who-are-you -->
+		
+		
+		
+		<div id="icons-about">
+		
+			<div id="wrapper">
+			
 				<h5 class="features">FEATURES</h5>
-				<div class="iconParent">
+				
+				<div class="icon-parent">
 
-					<div class="iconAbout">
-						<p class="iconText">Get your data at any time</p><br>
+					<div class="icon-about">
+						<p class="icon-text">Get your data at any time</p><br>
 						<img src="images/smartphone.png">
 					</div>
 					
-					<div class="iconAbout">
-						<p class="iconText">Follow state of storage</p><br>
+					<div class="icon-about">
+						<p class="icon-text">Follow state of storage</p><br>
 						<img src="images/silo.png">
 					</div>
 					
-					<div class="iconAbout">
-						<p class="iconText">Modernize agriculture production</p><br>
+					<div class="icon-about">
+						<p class="icon-text">Modernize agriculture production</p><br>
 						<img src="images/wheat.png">
 					</div>
 					
-				</div> <!-- end of iconParent-->
+				</div> <!-- end of iconParent -->
 				
-			</div> <!-- end of wrapper-->
+			</div> <!-- end of wrapper -->
 		
-		</div> <!-- end of iconsAbout-->
+		</div> <!-- end of icons-about -->
 		
-		<div id="contactUs">
+				
+		<div id="contact-us">
 		
 			<div id="wrapper">
-				<div class="contactUsImg"><img src="images/farmer.jpg"></div>
+			
+				<div>
+					<img src="images/farmer.jpg" class="contact-us-img">
+				</div>
 				<br>
 				<h5>Need our Help?</h5>
 				<p>You need more informations about <strong>TheSmartMiller</strong>? Be free to message to us!</p>
-				<p class="contactButton">Contact Us</p>
+				<p class="contact-button">Contact Us</p>
 			</div>
 		
-		</div>
-
+		</div> <!-- end of contact-us -->
+		
+		
 		<div id="footer">
 
-				<div id="wrapper">
+			<div id="wrapper">
 				
-					<div class="parentFooter">
+				<div class="footer-top">
 					
-						<div class="footerElement">
-							<img src="images/logo_text_white.png">
-						</div>
-
-						<div class="footerElement">
-							<span><strong>Contact Us</strong></span><br><br>
-							<i class="fas fa-map-marker-alt footerElementIcon"></i> Crkvina, Republika Srpska<br>
-							<i class="fas fa-phone footerElementIcon"></i> +387 65 426824<br>
-							<i class="far fa-envelope footerElementIcon"></i> milorad_bozic@hotmail.com
+					<div class="footer-top-left">
+					
+						<div>
+							<img src="images/logo_text_white.png" class="footer-logo">
 						</div>
 						
-						<div class="footerElement">
-
+						<div>
+		
+							<span><strong>Contact Us</strong></span><br>
+							<p><i class="fas fa-map-marker-alt top-left-p"></i> Crkvina, Republika Srpska<br>
+							<i class="fas fa-phone top-left-p"></i> +387 65 426824<br>
+							<i class="far fa-envelope top-left-p"></i> milorad_bozic@hotmail.com</p>
+							
 						</div>
 						
-						<div class="footerElement">
+					</div> <!-- end of footer-top-left -->
+					
+					
+					
+					<div class="footer-top-right">
+					
+						<div class="social-networks">
+						
 							<span><strong>Agrosocial networks</strong></span><br><br>
-							<a href="#" target="_blank"><i class="fab fa-facebook-square socialIcons fb"></i></a>
-							<a href="#" target="_blank"><i class="fab fa-twitter-square socialIcons tw"></i></a>
-							<a href="#" target="_blank"><i class="fab fa-linkedin socialIcons li"></i></a>
-						</div>
+							
+							<div class="social-networks-icons">
+								<a href="#" target="_blank"><i class="fab fa-facebook-square fb"></i></a>
+								<a href="#" target="_blank"><i class="fab fa-twitter-square tw"></i></a>
+								<a href="#" target="_blank"><i class="fab fa-linkedin li"></i></a>
+							
+							</div>
+							
+						</div> <!-- end of social-networks -->
 						
-					</div>	
+					</div> <!-- end of footer-top-right -->
+
+				</div>	 <!-- end of footer-top -->
 					
 					<hr>
 					
 					<p class="copyright"><strong>&copy 2018 The Smart Miller</strong> All Rights Reserved</p>
 		
-				</div> <!-- end of wrapper-->
+			</div> <!-- end of wrapper -->
 		
-		</div> <!-- end of footer-->		
-		</div> <!-- end of footer-->		
+		</div> <!-- end of footer-->	
 		
-	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
 	</body> <!-- end of body-->
 	
-
 </html>
