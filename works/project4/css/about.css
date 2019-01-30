@@ -156,7 +156,8 @@ nav ul li a:hover	{
 }
 
 
-
+	/* ICONS-ABOUT */
+	
 #icons-about	{
 	margin: 150px 0;
 	padding: 0;
@@ -381,3 +382,657 @@ input[type=submit] {
 .copyright	{
 	padding: 30px 0;
 }
+
+
+/* RESPONSIVE PAGE */
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 1200PX) AND (MAX-WIDTH: 1280PX) */
+
+@media screen and (min-width: 1200px) and (max-width: 1280px)	{
+	
+	/* HERO */
+	
+	#wrapper	{
+		width: 1024px;
+	}
+}
+
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 992PX) AND (MAX-WIDTH: 1199PX) */
+
+@media screen and (min-width: 992px) and (max-width: 1199px)	{
+	
+	/* HERO */
+	
+	#wrapper	{
+		width: 960px;
+	}
+
+	.hero-about-text	{
+		padding-bottom: 50px;
+	}
+
+	.hero-about-text p:nth-of-type(1)	{
+		font-size: 45px;
+	}
+
+	.hero-about-text p:nth-of-type(2)	{
+		font-size: 28px;
+	}
+	
+	.contact-elements	{
+		justify-content: space-evenly;
+	}
+
+	.contact-form	{
+		width: 400px;
+	}
+
+	#map	{
+		width: 400px;
+	}
+}
+
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 768PX) AND (MAX-WIDTH: 991PX) */
+
+@media screen and (min-width: 768px) and (max-width: 991px)	{
+		
+	/* HERO */
+
+	#wrapper {
+		width: 740px;
+	}
+	
+	#hero-about	{
+		height: 550px;
+	}
+	
+	.logo	{
+		height: 40px;
+		padding-right: 30px;
+	}
+	
+	nav ul li	{
+		font-size: 14px;
+	}
+	
+	.header-button	{
+		padding: 8px 8px;
+		font-size: 14px;
+	}
+
+	.hero-about-text	{
+		height: 490px;
+		align-items: flex-end;
+	}
+
+	.about-text	{
+		padding-bottom: 50px;
+	}
+
+	.hero-about-text p:nth-of-type(1)	{
+		font-size: 35px;
+	}
+
+	.hero-about-text p:nth-of-type(2)	{
+		font-size: 24px;
+	}
+
+
+	/* ICONS-ABOUT */
+	
+	#icons-about	{
+		margin: 100px 0;
+		font-size: 16px;
+	}
+
+	.icon-parent	{
+		justify-content: space-between;
+	}
+
+	.icon-about	img {
+		width: 90px;
+	}
+
+	
+	/* MISSION */
+	
+	#mission	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+
+	.mission-about	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.mission-img	{
+		/* width: 300px; */
+		padding: 10px 0;
+	}
+
+	.mission-img img	{
+		width: 400px;
+	}
+	
+	.mission-text	{
+		padding: 0 10px;
+	}
+
+	
+	/* PURPOSE */
+		
+	#purpose	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+
+	.purpose-about	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.purpose-img	{
+		padding: 10px 0;
+	}
+	
+	.purpose-img img	{
+		width: 400px;
+	}
+
+	.purpose-text	{
+		padding: 0 10px;
+	}
+	
+	
+	/* OUR-TEAM */
+	
+	.team-member img	{
+		width: 200px;
+	}
+	
+	/* CONTACT-FORM */
+	
+	#contact	{
+		margin: 100px 0 0 0;
+	}
+
+	#contact h4	{
+		padding: 0 0 25px 0;
+	}
+
+	.contact-elements	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-form	{
+		width: 500px;
+	}
+		
+	.map	{
+		text-align: center;
+	}
+
+	.map-title	{
+		margin: 0;
+		padding: 0 0 25px 0;
+	}
+
+	#map	{
+		width: 500px;
+
+	}
+
+}
+
+
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 576PX) AND (MAX-WIDTH: 767PX) */
+
+@media screen and (min-width: 576px) and (max-width: 767px)	{
+	
+	/* HERO */
+	
+	#wrapper	{
+		width: 540px;
+	}
+	
+	#hero-about	{
+		height: 420px;
+	}
+	
+	.logo	{
+		height: 40px;
+		padding-right: 20px;
+	}
+
+	.header-button	{
+		padding: 4px 6px;
+		font-size: 13px;
+	}
+	
+	.hero-about-text p:nth-of-type(1)	{
+		font-size: 32px;
+	}
+
+	.hero-about-text p:nth-of-type(2)	{
+		font-size: 20px;
+	}
+
+	
+	/* ICONS ABOUT */
+
+	#icons-about	{
+		margin: 100px 0;
+		font-size: 16px;
+	}
+
+	.icon-parent	{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.icon-about	{
+		padding-bottom: 25px;
+	}
+
+	.icon-about	img {
+		width: 100px;
+	}
+	
+		/* MISSION */
+	
+	#mission	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+
+	.mission-about	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.mission-img	{
+		/* width: 300px; */
+		padding: 10px 0;
+	}
+
+	.mission-img img	{
+		width: 400px;
+	}
+	
+	.mission-text	{
+		padding: 0 10px;
+	}
+
+	
+	/* PURPOSE */
+		
+	#purpose	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+
+	.purpose-about	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.purpose-img	{
+		padding: 10px 0;
+	}
+	
+	.purpose-img img	{
+		width: 400px;
+	}
+
+	.purpose-text	{
+		padding: 0 10px;
+	}
+	
+	
+	/* OUR-TEAM */
+	
+	.team-member img	{
+		width: 200px;
+	}
+	
+	
+	
+	/* CONTACT-FORM */
+	
+	#contact	{
+		margin: 100px 0 0 0;
+	}
+
+	#contact h4	{
+		padding: 0 0 25px 0;
+	}
+
+	.contact-elements	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-form	{
+		width: 100%;
+	}
+		
+	.map	{
+		text-align: center;
+	}
+
+	.map-title	{
+		margin: 0;
+		padding: 0 0 25px 0;
+	}
+
+	#map	{
+		max-width: 100%;
+	}
+	
+	
+	/* FOOTER */
+	
+	
+	#footer	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+	
+	.footer-top	{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.footer-top-left	{
+		justify-content: space-between;
+	}
+
+	.footer-logo	{
+		height: 60px;
+		padding-right: 50px;
+	}
+
+	.top-left-p	{
+		padding: 10px 0;
+	}
+
+	.social-networks	{
+		text-align: center;
+	}
+	
+	.social-networks-icons	{
+		justify-content: center;
+	}
+
+	.fab	{
+		padding: 0 15px;
+	}
+
+	.copyright	{
+		padding: 20px 0;
+		text-align: center;
+	}
+}
+
+
+/* MEDIA SCREEN AND (MAX-WIDTH: 575PX) */
+
+@media screen and (max-width: 575px)	{
+	
+	/* HERO */
+	
+	#wrapper	{
+		width: 90%;
+	}
+	
+	#hero-about	{
+		width: 100%;
+		height: 400px;
+	}
+	
+	.header	{
+		display: flex;
+		flex-direction: column;
+		align-content: center; 
+	}
+
+	.header-left	{
+		display: flex;
+		justify-content: space-between; 
+	}
+
+	.logo	{
+		height: 40px;
+	}
+
+	nav	{
+		display: flex;
+		align-items: center;	
+	}
+
+	nav ul	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+
+	nav ul li	{
+		padding-right: 20px;
+		font-size: 14px;
+	}
+
+	nav ul li:nth-of-type(3)	{
+		padding-right: 0;
+	}
+
+
+	.header-right	{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding-top: 10px;
+	}
+
+
+	.header-button	{
+		padding: 4px 6px;
+		font-size: 13px;
+	}
+
+	.header-button:nth-of-type(2)  {
+		margin-left: 30px;
+	}
+
+	.header-button	{
+		padding: 4px 6px;
+		font-size: 13px;
+	}
+	
+	.hero-about-text p:nth-of-type(1)	{
+		font-size: 32px;
+	}
+
+	.hero-about-text p:nth-of-type(2)	{
+		font-size: 20px;
+	}
+	
+	
+	/* ICONS ABOUT */
+
+	#icons-about	{
+		margin: 100px 0;
+		font-size: 16px;
+	}
+
+	.icon-parent	{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.icon-about	{
+		padding-bottom: 25px;
+	}
+
+	.icon-about	img {
+		width: 100px;
+	}
+	
+			/* MISSION */
+	
+	#mission	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+
+	.mission-about	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.mission-img	{
+		padding: 10px 0;
+	}
+
+	.mission-img img	{
+		width: 100%;
+	}
+	
+	.mission-text	{
+		padding: 0 10px;
+	}
+
+	
+	/* PURPOSE */
+		
+	#purpose	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+	}
+
+	.purpose-about	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.purpose-img	{
+		padding: 10px 0;
+	}
+	
+	.purpose-img img	{
+		width: 100%;
+	}
+
+	.purpose-text	{
+		padding: 0 10px;
+	}
+	
+	
+	/* OUR-TEAM */
+	
+	.team-member img	{
+		width: 200px;
+	}
+	
+	
+	/* CONTACT-FORM */
+	
+	#contact	{
+		margin: 100px 0 0 0;
+	}
+
+	#contact h4	{
+		padding: 0 0 25px 0;
+	}
+
+	.contact-elements	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-form	{
+		width: 100%;
+	}
+		
+	.map	{
+		text-align: center;
+		width: 100%;
+	}
+
+	.map-title	{
+		margin: 0;
+		padding: 0 0 25px 0;
+	}
+
+	#map	{
+		max-width: 100%;
+	}
+	
+	/* FOOTER */
+	
+	
+	#footer	{
+		margin: 100px 0 0 0;
+		font-size: 16px;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.footer-top	{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.footer-top-left	{
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.footer-logo	{
+		height: 60px;
+		padding-right: 0px;
+		padding-bottom: 15px;
+	}
+
+	.top-left-p	{
+		padding: 15px 0;
+	}
+
+	.social-networks	{
+		text-align: center;
+	}
+	
+	.social-networks-icons	{
+		justify-content: center;
+	}
+
+	.fab	{
+		padding: 0 15px;
+	}
+
+	.copyright	{
+		padding: 20px 0;
+	}
+
+}
+
