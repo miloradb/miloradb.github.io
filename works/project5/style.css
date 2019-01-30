@@ -51,14 +51,18 @@ p	{
 #headerTop	{
 	background: #282828;
 	color: #BEBEBE;
-	overflow: hidden;
-	padding: 4px 0 1px;
 	font-weight: strong;
 	margin: 0 auto;
 }
 
+.headerContent	{
+	display: flex;
+	justify-content: space-between;
+}
+
 .headerTopLeft	{
-	float: left;
+	display: flex;
+	align-items: center;
 }
 
 .phone	{
@@ -66,9 +70,8 @@ p	{
 }
 
 .headerTopRight	{
-	float: right;
-	margin: 0 auto;
-	padding-top: 5px;
+	display: flex;
+	align-items: center;
 }
 
 .icons	{
@@ -80,32 +83,51 @@ p	{
 	margin: 0 auto;
 }
 
+#header	{
+	margin: 0;
+	padding: 0;
+}
+
+.headerMenu	{
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+}
+
 .logo	{
+	display: flex;
+	align-self: center;
 	height: 40px;
-	padding: 20px 0;
 }
 
 .nav	{
-	float: right;
+	display: flex;
+	align-items: center;
 }
 
-.nav ul {
+.nav ul	{
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	
+	display: flex;
 }
 
-.nav ul li {
-	float: left;
-	padding: 20px;
+.nav ul li	{
+	margin-right: 30px;
+	display: block;
 	font-weight: 500;
 }
+
+
+.nav ul li:nth-of-type(5)	{
+	margin-right: 0;
+}
+
 
 .nav ul li a	{
 	color: #282828;
 }
-.nav ul li:nth-of-type(5)  {
-	padding-right: 0px;
-}
+
 
 
 #hero	{
@@ -127,6 +149,7 @@ p	{
 	color: #FFFFFF;
 	text-align: center;
 	padding-bottom: 20px;
+	line-height: 1.7;
 }
 
 .wrapper h2 {
@@ -134,31 +157,27 @@ p	{
 	padding-top: 50px;
 }
 
-.lm	{
-	text-align: center;
-	padding: 17px;
-	width: 150px;
+.lm a	{
 	border: 2px solid #FFFFFF;
 	border-radius: 5px;
-	margin: 0 auto;	
-}
-
-.lm a	{
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
 	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 	color: #FFFFFF;
 }
 
 #products	{
 	background-color: #E6E6E6;
-	margin: 0;
-	padding-bottom: 120px;
-	padding-top: 10px;
+	/* margin: 100px 0; */
+	padding: 100px 0;
 }
 
-#products .wrapper::after	{
-	content: "";
-	display: table;
-	clear: both;
+#products h2	{
+	margin: 0;
+	padding: 0;
 }
 
 #products p	{
@@ -166,15 +185,17 @@ p	{
 	margin-bottom: 30px;
 }
 
-.product {
-	float: left;
-	width: 270px;
-	margin-right: 40px;
-	background: #FFFFFF;
+.products	{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
-.product:nth-of-type(4)  {
-	margin-right: 0px;
+.product {
+	width: 250px;
+	margin: 10px;
+	padding: 0 10px;
+	background: #FFFFFF;
 }
 
 .product h3	{
@@ -228,57 +249,58 @@ p	{
 
 #partners	{
 	padding: 50px 0;
-	overflow: hidden;
-
 }
+
 .partner h4	{
 	text-align: center;
 	padding-bottom: 15px;
 }
 
-.fooBar {
-	float: left;
-	margin-right: 37px;
-	padding: 50px 0;
+.partnerLogo	{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.fooBar:nth-of-type(5)  {
-	margin-right: 0px;
+.brand {
+	padding: 50px 0;
 }
 
 #footer	{
 	background-color: #383838;
 	padding: 50px 0;
 	height: 370px;
-}
-
-.ciljevi	{
-	float: left;
 	color: #FFFFFF;
 }
 
+.sadrzaj	{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 35px;
+}
+
+.ciljevi	{
+	display: flex;
+}
+
 .ciljevi h4	{
-	color: #FFFFFF
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
 }
 
 .footerLogo	{
-	float: right;
+	
 }
 
 .misija	{
-	width: 300px;
-	float: left;
-	padding-right: 20px;
+	width: 280px;
+	padding: 0 10px;
 }
 
 .vizija	{
-	width: 300px;
-	float: left;
-}
-
-.sadrzaj	{
-	overflow: hidden;
-	padding-bottom: 35px;
+	width: 280px;
+	padding: 0 10px;
 }
 
 .footerEnd	{
@@ -298,59 +320,568 @@ p	{
 	color: #FFFFFF;
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+
+
+
+
+/* RESPONSIVE PAGE */
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 1200PX) AND (MAX-WIDTH: 1280PX) */
+
+@media screen and (min-width: 1200px) and (max-width: 1280px)	{
+	
+	/* HERO */
+	
+	.wrapper	{
+		width: 1024px;
+	}
+	
+	.product {
+		width: 200px;
+		padding: 0 10px;
+		justify-content: center;
+	}
+	
+	.more	{
+		padding: 10px;
+	}
+	
+	.brand {
+		width: 200px;
+		justify-content: space-between;
+	}
+}
+
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 992PX) AND (MAX-WIDTH: 1199PX) */
+
+@media screen and (min-width: 992px) and (max-width: 1199px)	{
+	
+	/* HERO */
+	
+	.wrapper	{
+		width: 960px;
+	}
+
+
+	.headerMenu	{
+		height: 50px;
+	}
+
+	.logo	{
+		height: 30px;
+	}
+
+	.nav ul li	{
+		margin-right: 25px;
+	}
+
+
+	.nav ul li:nth-of-type(5)	{
+		margin-right: 0;
+	}
+	
+	#hero	{
+		padding: 150px 0; 
+	}
+
+
+	#hero h1	{
+		font-size: 2.5em;
+	}
+
+	#hero p	{
+		line-height: 1.5;
+	}
+	
+	.lm a	{
+		padding: 12px 25px;
+	}
+	
+	.wrapper h2 {
+		text-align: center;
+		padding-top: 10px;
+	}
+	
+	.products	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+
+	.product {
+		margin: 10px 30px;
+	}
+	
+	.more	{
+		padding: 10px;
+	}
+	
+	
+	#partners	{
+		padding: 50px 0;
+	}
+
+	.partner h4	{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.partnerLogo	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.brand {
+		padding: 50px 0;
+		margin: 0 50px;
+	}
+
+}
+
+
+
+/* MEDIA SCREEN AND (MIN-WIDTH: 768PX) AND (MAX-WIDTH: 991PX) */
+
+@media screen and (min-width: 768px) and (max-width: 991px)	{
+		
+	/* HERO */
+
+
 	.wrapper {
 		width: 740px;
 	}
 	
-	.product {
-		float: left;
-		width: 170px;
-		margin-right: 15px;
-		background: #FFFFFF;
-		font-size: 80%;
+	.logo	{
+		height: 30px;
+	}	
+	
+	.headerMenu	{
+		height: 50px;
 	}
 	
-	.about_window	{
-		width: 320px;
-		font-size: 70%;
+	#hero	{
+		padding: 120px 0; 
 	}
 	
-	.fooBar {
-		width: 140px;
-		float: left;
-		margin-right: 10px;
-		padding: 50px 0;
-	}
-	#footer	{
-		padding: 10px 0 50px;
-		overflow: hidden;
+	#hero h1	{
+		font-size: 2.2em;
 	}
 	
-	.misija	{
-		width: 250px;
-		float: left;
+	#hero p	{
+		line-height: 1.2;
+	}
+	
+	.lm a	{
+		padding: 8px 18px;
+	}
+	
+	
+	.products	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 }
 
-	.vizija	{
-		width: 250px;
-		float: left;
+	.product {
+		margin: 10px 30px;
+		width: 200px;
 	}
 	
+	.more	{
+		padding: 10px;
+	}
+	
+	#about	{
+		padding: 120px 0;
+	}
+
+	.about_window h3	{
+		font-size: 1.8em;
+		margin: 0;
+		padding-bottom: 10px;
+
+	}
+	.about_window	{
+		width: 400px;
+		padding: 15px;
+
+	}
+
+	.about_window p	{
+		font-size: 14px;
+	}
+
+	.learn	{
+		padding: 8px 18px;
+	}
+	
+	#partners	{
+		padding: 50px 0;
+	}
+
+	.partner h4	{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.partnerLogo	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.brand {
+		padding: 50px 0;
+		margin: 0 15px;
+	}
+
+	
+	#footer	{
+		padding: 50px 0;
+		height: 370px;
+		color: #FFFFFF;
+	}
+
+	.sadrzaj	{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+
+	.misija	{
+
+		padding-left: 0px;
+	}
+
+	.vizija	{
+		width: 280px;
+		padding: 0 10px;
+	}
+
 	.footerEnd	{
-		padding-top: 25px;
+		padding-top: 20px;
 	}
 
 	.backButton	{
-		padding: 8px 15px;
+		padding: 8px 18px;
+
+	}
 	
 }
 
 
+/* MEDIA SCREEN AND (MIN-WIDTH: 576PX) AND (MAX-WIDTH: 767PX) */
+
+@media screen and (min-width: 576px) and (max-width: 767px)	{
+	
+	/* HERO */
+	
+	.wrapper	{
+		width: 540px;
+	}
+
+	.headerMenu	{
+		display: flex;
+		justify-content: center;
+		height: 60px;
+		flex-direction: column;
+	}
+
+	.logo	{
+		height: 30px;
+		padding: 5px 0;
+	}
+
+	.nav	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav ul li	{
+		margin: 0 15px;
+	}
+
+	
+	#hero	{
+		padding: 100px 0; 
+	}
+	
+	#hero h1	{
+		font-size: 2em;
+	}
+	
+	#hero p	{
+		line-height: 1.1;
+	}
+	
+	.lm a	{
+		padding: 8px 18px;
+	}
+	
+	.products	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.product {
+		width: 200px;
+		margin: 10px 20px;
+		font-size: 14px;
+	}
+	
+	.product h3	{
+		font-size: 1.4em;
+	}
+	
+	.more	{
+		padding: 5px;
+	}
+	
+	#about	{
+		padding: 100px 0;
+	}
+
+	.about_window h3	{
+		font-size: 1.8em;
+		margin: 0;
+		padding-bottom: 10px;
+
+	}
+	.about_window	{
+		width: 400px;
+		padding: 15px;
+
+	}
+
+	.about_window p	{
+		font-size: 14px;
+	}
+
+	.learn	{
+		padding: 8px 18px;
+	}
+	
+	#partners	{
+		padding: 50px 0;
+	}
+
+	.partner h4	{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.partnerLogo	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.brand {
+		padding: 50px 0;
+		margin: 0 15px;
+	}
+
+	
+	#footer	{
+		padding: 50px 0;
+		height: 370px;
+		color: #FFFFFF;
+	}
+
+	.sadrzaj	{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+
+	.misija	{
+		padding-left: 0px;
+	}
+
+	.vizija	{
+		width: 280px;
+		padding: 0 10px;
+	}
+
+	.footerEnd	{
+		padding-top: 20px;
+	}
+	
+	.logoFooter	{
+		height: 30px;
+	}
+
+	.backButton	{
+		padding: 8px 18px;
+	}
+}
 
 
 
+/* MEDIA SCREEN AND (MAX-WIDTH: 575PX) */
 
+@media screen and (max-width: 575px)	{
+	
+	/* HERO */
+	
+	.wrapper	{
+		width: 90%;
+	}
+
+	
+	.headerMenu	{
+		display: flex;
+		justify-content: center;
+		height: 60px;
+		flex-direction: column;
+	}
+
+	.logo	{
+		height: 30px;
+		padding: 5px 0;
+	}
+
+	.nav	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav ul li	{
+		margin: 0 10px;
+	}
+
+	
+	#hero	{
+		padding: 100px 0; 
+	}
+	
+	#hero h1	{
+		font-size: 2em;
+	}
+	
+	#hero p	{
+		line-height: 1.1;
+	}
+	
+	.lm a	{
+		padding: 8px 18px;
+	}
+	
+	.products	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.product {
+		width: 200px;
+		margin: 10px 20px;
+		font-size: 14px;
+	}
+	
+	.product h3	{
+		font-size: 1.4em;
+	}
+	
+	.more	{
+		padding: 5px;
+	}
+	
+	#about	{
+		padding: 100px 0;
+	}
+
+	.about_window h3	{
+		font-size: 1.8em;
+		margin: 0;
+		padding-bottom: 10px;
+
+	}
+	.about_window	{
+		width: 400px;
+		padding: 15px;
+
+	}
+
+	.about_window p	{
+		font-size: 14px;
+	}
+
+	.learn	{
+		padding: 8px 18px;
+	}
+	
+	#partners	{
+		padding: 50px 0;
+	}
+
+	.partner h4	{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.partnerLogo	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.brand {
+		padding: 50px 0;
+		margin: 0 15px;
+	}
+
+	
+	#footer	{
+		padding: 50px 0;
+		height: 570px;
+	}
+
+	.sadrzaj	{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		padding-bottom: 20px;
+	}
+	
+	.ciljevi	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.misija	{
+		padding: 0;
+	}
+
+	.vizija	{
+		padding: 0;
+	}
+
+	.footerEnd	{
+		padding-top: 20px;
+	}
+	
+	.footerLogo	{
+		display: flex;
+		align-self: center;
+	}
+	.logoFooter	{
+		height: 30px;
+		margin-top: 20px;
+	}
+
+	.backButton	{
+		padding: 8px 18px;
+	}
+}
 
 
 
