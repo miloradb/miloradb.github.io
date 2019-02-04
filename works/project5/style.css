@@ -270,7 +270,6 @@ p	{
 #footer	{
 	background-color: #383838;
 	padding: 50px 0;
-	height: 370px;
 	color: #FFFFFF;
 }
 
@@ -290,8 +289,10 @@ p	{
 	padding: 0;
 }
 
-.footerLogo	{
-	
+.logoFooter	{
+	display: flex;
+	align-self: center;
+	height: 40px;
 }
 
 .misija	{
@@ -307,6 +308,7 @@ p	{
 .footerEnd	{
 	color:	#FFFFFF;
 	padding-top: 35px;
+	overflow: hidden;
 }
 
 .backButton	{
@@ -563,7 +565,7 @@ p	{
 		padding: 0 10px;
 	}
 	
-	.footerLogo	{
+	.logoFooter	{
 		height: 40px;
 	}
 
@@ -720,6 +722,7 @@ p	{
 	
 	.logoFooter	{
 		height: 30px;
+		margin-top: 20px;
 	}
 
 	.backButton	{
@@ -879,7 +882,6 @@ p	{
 	
 	#footer	{
 		padding: 50px 0;
-		height: 570px;
 	}
 
 	.sadrzaj	{
@@ -907,7 +909,7 @@ p	{
 		padding-top: 20px;
 	}
 	
-	.footerLogo	{
+	.logoFooter	{
 		display: flex;
 		align-self: center;
 	}
@@ -917,6 +919,7 @@ p	{
 	}
 
 	.backButton	{
+		margin-top: 10px;
 		padding: 8px 18px;
 	}
 }
