@@ -478,6 +478,11 @@ p	{
 		line-height: 1.2;
 	}
 	
+	.icons	{
+		padding-left: 20px;
+		font-size: 26px;
+	}
+	
 	.lm a	{
 		padding: 8px 18px;
 	}
@@ -765,7 +770,8 @@ p	{
 	}
 
 	.icons	{
-		padding-left: 5px;
+		padding-left: 20px;
+		font-size: 26px;
 	}
 	
 	.headerMenu	{
@@ -797,7 +803,7 @@ p	{
 	}
 	
 	.nav ul li:nth-of-type(5)	{
-		margin-right: 0;
+		margin: 0 10px;
 	}
 
 	
