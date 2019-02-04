@@ -167,11 +167,12 @@ nav ul li a:hover	{
 
 .icon-parent	{
 	display: flex;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .icon-about	{
-	width: 400px;
+	/* width: 400px; */
 }
 
 .icon-text	{
@@ -879,6 +880,7 @@ input[type=submit] {
 	#icons-about	{
 		margin: 100px 0;
 		font-size: 16px;
+		width: 100%;
 	}
 
 	.icon-parent	{
@@ -891,7 +893,7 @@ input[type=submit] {
 	}
 
 	.icon-about	img {
-		width: 100px;
+		/* width: 100px; */
 	}
 	
 			/* MISSION */
