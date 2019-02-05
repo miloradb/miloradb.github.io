@@ -384,12 +384,11 @@ nav ul li a:hover	{
 	}
 	
 	.icon-parent	{
-		display: flex;
 		justify-content: space-between;
 	}
 	
-	.icon-about	{
-		width: 30px;
+	.icon-about	img {
+		width: 90px;
 	}
 	
 	
